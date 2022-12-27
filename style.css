@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    overflow-y: hidden;
+    background-color: #23242a;
+}
+
+.container-principal{
+    width: 440px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    background-color: #1c1c1c;
+    box-shadow: 0px 2px 20px #28969e;
+    border-radius: 10px;
+    padding: 55px;
+    margin: auto;
+    margin-top: 80px;
+}
+
+.title{
+    color: #45f3ff;
+    text-align: center;
+    margin-bottom: 23px;
+}
+
+.container{
+    position: relative;
+}
+
+.inputUser{
+    margin-top: 23px;
+}
+
+.containerSenha{
+    margin-top: 46px ;
+}
+
+input{
+    position: relative;
+    height: 50px;
+    padding: 10px;
+    padding-left: 25px;
+    outline: none;
+    border: 1px solid #45f3ff;
+    border-radius: 10px;
+    width: 100%;
+    background-color: transparent;
+    color: #8f8f8f;
+}
+
+.error{
+   font-size: 14px;
+   margin-left: 5px;
+   color: rgba(255, 0, 0, 0.651);
+   display: none;
+   margin-top: 3px;
+}
+
+.errorData{
+    font-size: 14px;
+    margin-left: 5px;
+    color: rgba(255, 0, 0, 0.651);
+    display: none;
+    margin-top: 3px;
+}
+
+.input:focus ~ .placeholder, 
+.input:valid ~ .placeholder{
+    transform: translateY(-40px) translateX(25px); 
+    padding-left: 0;
+    background-color:  #1c1c1c;
+    padding: 0 7px;
+    border-radius: 20px;
+}
+
+.placeholder{  
+    position: absolute;
+    left: 0;
+    bottom: 0px;
+    padding: 15px;
+    padding-left: 25px;
+    color: black;
+    transition: .3s ease-out;
+    color: #8f8f8f;
+}
+
+.textos{
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.signup{
+    margin-right: 10px;
+    color: #45f3ff;
+    font-size: 12px;
+    display: inline-block;
+    border-bottom: 1px solid transparent;
+    transition: .5s;
+}
+
+.fSenha{
+    margin-left: 7px;
+    color: #8f8f8f ;
+    font-size: 12px;
+    display: inline-block;
+    border-bottom: 1px solid transparent;
+    transition: .3s;
+}
+
+.signup:hover{
+    border-bottom: 1px solid #45f3ff ;
+    cursor: pointer;
+}
+
+
+.fSenha:hover{
+    border-bottom: 1px solid #8f8f8f;
+    cursor: pointer;
+}
+
+.btnSenha{
+    position: absolute;
+    right: 0;
+    padding: 10px;
+    padding-right: 15px;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    color: #8f8f8f;
+    visibility: hidden;
+    user-select: none;
+}
+
+.btnLogin{
+    width: 150px;
+    height: 50px;
+    background-color: #45f3ff;
+    border: none;
+    border-radius: 10px;
+    display: inline-block;
+    margin-top: 46px;
+    font-weight: bolder;
+    transition: .17s;
+}
+
+.btnLogin:hover{
+    background-color: #31a7af;
+}
+
+.a{
+    transform: translate(180px);
+}
+
+.b{
+    transform: translate(0px);
+}

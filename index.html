@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="style.css"/>
+    <script src="script.js" defer></script>
+</head>
+<body >
+    
+<div class="container-principal">
+
+    <div>
+        <h1 class="title">Sign in</h1>
+    </div>
+    
+    <div class="container" >
+        <input class="input inputUser" type="text" required="required" onkeyup="validacaoUser()">
+        <span class="placeholder placeholderUser">username</span>
+    </div>
+
+        <span class="error">username must be at least 5 characters.</span>
+        <span class="errorData">complete the registration data</span>
+
+    <div class="container containerSenha" >
+        <input class="input inputSenha" required="required" type="password" value="">
+        <span class="placeholder">password</span>
+        <span class="btnSenha" onclick="exibirOcultarSenha()">Exibir</span>
+    </div>
+
+    <div class="textos">
+        <span class="fSenha" onclick="sla()">Forgot password</span>
+        <span class="signup">Sign up</span>
+    </div>
+
+    <button class="btnLogin c" onclick="validacaoGeral()">Login</button>
+
+</div>
+
+
+</body>
+</html>
